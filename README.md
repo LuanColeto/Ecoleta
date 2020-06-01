@@ -49,7 +49,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 1. Faça um clone :
 
 ```sh
-  $ git clone https://github.com/vitorserrano/ecoleta.git
+  $ git clone https://github.com/LuanColeto/Ecoleta.git
 ```
 
 2. Executando a Aplicação:
@@ -91,5 +91,5 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 ---
 
 <h4 align="center">
-    Feito com 💜 by <a href="https://www.linkedin.com/in/vitor-serrano/" target="_blank">Vitor Serrano</a>
+    Feito com 💜 by <a href="https://www.linkedin.com/in/luan-coleto-7b8b9b180/" target="_blank">Luan Coleto</a>
 </h4>
