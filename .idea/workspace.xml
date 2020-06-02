@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="34c4afa9-6b05-4e1a-a4cd-7cf9f65442f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.ts" afterDir="false" />
+=======
+    <list default="true" id="34c4afa9-6b05-4e1a-a4cd-7cf9f65442f6" name="Default Changelist" comment="create-react-app">
+      <change afterPath="$PROJECT_DIR$/frontend" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -152,12 +157,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591052182844</updated>
+<<<<<<< Updated upstream
       <workItem from="1591052184155" duration="3109000" />
+=======
+      <workItem from="1591052184155" duration="3540000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="3109000" />
+=======
+    <option name="totallyTimeSpent" value="3540000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -194,6 +207,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create-react-app" />
+    <option name="LAST_COMMIT_MESSAGE" value="create-react-app" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/backend/.gitignore">
