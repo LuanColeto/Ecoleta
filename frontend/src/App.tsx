@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Header from './header'
 
 function App() {
+
+  let [counter, setCounter] = useState(1111);
+
+  function onClickButton() {
+    setCounter(counter )
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <div>
+          <Header title="Hello World" />
+
+          <h3>{counter}</h3>
+          <button onClick={onClickButton}>Aumentar</button>
+        </div>
   );
 }
 
