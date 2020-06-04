@@ -1,22 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
-import Header from './header'
+
+import Routes from './routes'
 
 function App() {
-
-  let [counter, setCounter] = useState(1111);
-
-  function onClickButton() {
-    setCounter(counter )
-  }
-
   return (
-        <div>
-          <Header title="Hello World" />
-
-          <h3>{counter}</h3>
-          <button onClick={onClickButton}>Aumentar</button>
-        </div>
+      <Routes/>
   );
 }
 
