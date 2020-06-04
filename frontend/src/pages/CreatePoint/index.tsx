@@ -8,9 +8,15 @@ import './styles.css'
 
 import Logo from '../../assets/logo.svg'
 
+interface Item {
+    id:number,
+    name:string,
+    image_url:string
+}
+
 const CreatePoint = () => {
 
-    const [items, setItems] = useState([]);
+    const [items, setItems] = useState<Item[]>([]);
 
     useEffect(() => {
         api.get('items').then(response => {
@@ -109,10 +115,10 @@ const CreatePoint = () => {
                     <ul className="items-grid">
                         {items.map(item => (
                             <li>
-                                <img src="http://localhost:3333/uploads/oleo.svg" />
-                                <span>Óleo de cozinha</span>
+                                <img src={item.image_url} />
+                                <span>{item.name}</span>
                             </li>
-                        ))} 
+                        ))}
 
                     </ul>
                 </fieldset>
