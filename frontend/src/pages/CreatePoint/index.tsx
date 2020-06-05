@@ -54,7 +54,7 @@ const CreatePoint = () => {
     }, []);
 
     useEffect(() => {
-        api.get('items').then(response => {
+        api.get('/items').then(response => {
             setItems(response.data);
         })
     }, []);
@@ -120,7 +120,7 @@ const CreatePoint = () => {
 
     }
 
-      function handleSubmit(event: FormEvent) {
+      async function handleSubmit(event: FormEvent) {
         event.preventDefault();
 
         const {name, email, whatsapp } = formData;
@@ -140,7 +140,7 @@ const CreatePoint = () => {
             items
         };
 
-          api.post('points', data);
+         await api.post('/points', data);
 
         alert("Ponto de Coleta criado")
     }
@@ -176,7 +176,7 @@ const CreatePoint = () => {
 
                     <div className="field-group">
                         <div className="field">
-                            <label htmlFor="name">E-mail</label>
+                            <label htmlFor="email">E-mail</label>
                             <input
                                 type="email"
                                 name="email"
@@ -185,7 +185,7 @@ const CreatePoint = () => {
                             />
                         </div>
                         <div className="field">
-                            <label htmlFor="name">Whatsapp</label>
+                            <label htmlFor="whatsapp">Whatsapp</label>
                             <input
                                 type="text"
                                 name="whatsapp"
