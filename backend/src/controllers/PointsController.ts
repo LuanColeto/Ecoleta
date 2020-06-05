@@ -1,4 +1,4 @@
-import {Request, response, Response} from "express";
+import {Request, Response} from "express";
 import knex from "../database/connection";
 
 
@@ -32,7 +32,7 @@ class PointsController {
             .split(',')
             .map(item => Number(item.trim()));
 
-        const points = await knex('points')
+        const points = await     knex('points')
             .join('point_items', 'points.id', '=', 'point_items.point_id')
             .whereIn('point_items.item_id', parsedItems)
             .where('city', String(city))
@@ -40,7 +40,7 @@ class PointsController {
             .distinct()
             .select('points.*');
 
-        return response.json(points)
+        return response.json(points);
 
     }
 
@@ -68,7 +68,7 @@ class PointsController {
         longitude,
         city,
         uf,
-    }
+    };
 
     const insertedIds = await trx('points').insert(point);
 

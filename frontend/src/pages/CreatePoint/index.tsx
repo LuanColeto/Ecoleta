@@ -1,5 +1,5 @@
 import React, {useEffect, useState, ChangeEvent, FormEvent} from 'react';
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 import {Map, TileLayer, Marker} from 'react-leaflet'
 import { LeafletMouseEvent } from 'leaflet'
@@ -39,6 +39,8 @@ const CreatePoint = () => {
        email: '',
        whatsapp: '',
     });
+
+    // const history = useHistory();
 
     const [selectedUf, setSelectedUf] = useState('0');
     const [selectedCity, setSelectedCity] = useState('0');
@@ -101,9 +103,9 @@ const CreatePoint = () => {
     }
 
     function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
-        const { name, value } = event.target
+        const { name, value } = event.target;
 
-        setFormData({...formData, [name] : [value]});
+        setFormData({...formData, [name] : value});
     }
 
     function handleSelectItem(id: number) {
@@ -140,9 +142,11 @@ const CreatePoint = () => {
             items
         };
 
-         await api.post('/points', data);
 
-        alert("Ponto de Coleta criado")
+         await api.post('points', data);
+
+        alert("Ponto de Coleta criado");
+
     }
 
     return (
@@ -156,7 +160,7 @@ const CreatePoint = () => {
                 </Link>
             </header>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} autoComplete="off">
                 <h1>Cadastro do <br/> ponto de coleta</h1>
 
                 <fieldset>
@@ -257,7 +261,7 @@ const CreatePoint = () => {
                                 onClick={() => handleSelectItem(item.id)}
                                 className={selectedItems.includes(item.id) ? 'selected' : ''}
                                 >
-                                <img src={item.image_url} />
+                                <img src={item.image_url} alt="item" />
                                 <span>{item.name}</span>
                             </li>
                         ))}
