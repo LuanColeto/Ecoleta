@@ -70,12 +70,12 @@ const Points = () => {
             params: {
                 city: routeParams.city,
                 uf: routeParams.uf,
-                items: [2],
-            }
-        }).then(response => {
+                items: selectedItems,
+            },
+        }).then((response) => {
             setPoints(response.data)
         })
-    }, []);
+    }, [selectedItems]);
 
     function handleNavigateBack() {
         navigation.goBack();
