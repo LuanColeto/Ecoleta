@@ -5,7 +5,7 @@
 
 # Índice
 
-- [Sobre](#sobre)
+- [Sobre o Projeto](#sobre)
 - [Documentação](#documentacao)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Usar](#como-usar)
@@ -13,9 +13,9 @@
 
 <a id="sobre"></a>
 
-## :bookmark: Sobre
+## :bookmark: Sobre o Projeto
 
-O <strong>Ecoleta</strong> é uma aplicação Web e Mobile para ajudar pessoas a encontrarem pontos de coleta para reciclagem.
+<strong>Ecoleta</strong> é uma aplicação desenvolvida com o objetivo de ajudar pessoas a encontrarem pontos de coleta para reciclagem.
 
 Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>Next Level Week</strong> distribuída pela [Rocketseat](https://rocketseat.com.br/). A ideia de criar uma aplicação voltada ao meio ambiente surgiu da coincidência da data do curso e a data da <strong>semana do meio ambiente</strong>
 
@@ -23,7 +23,7 @@ Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>N
 
 ## :books: Documentação
 
-Para reforçar alguns conceitos e registrar comandos que são dificeis de se lembrar eu fiz uma pequena **[DOCUMENTAÇÃO](DOCUMENTATION.md)** para ajudar quem esta iniciando com **TypeScript**, **Node**, **ReactJS** e **React Native**. 
+Para entender melhor sobre a aplicação, de como foi desenvolvida e de como iniciar ela, foi feita uma documentação   **[DOCUMENTAÇÃO](DOCUMENTATION.md)** para ajudar quem esta iniciando com **TypeScript**, **Node**, **ReactJS** e **React Native**. 
 
 <a id="tecnologias-utilizadas"></a>
 
