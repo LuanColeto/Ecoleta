@@ -21,7 +21,6 @@ interface Point {
     image: string;
     latitude: number;
     longitude:number;
-    image_url: string;
 }
 
 interface Params {
@@ -102,65 +101,65 @@ const Points = () => {
 
     return (
         <>
-        <   View style={styles.container}>
-            <TouchableOpacity onPress={handleNavigateBack}>
-                <Icon name="arrow-left" size={20} color="#34cb79"/>
-            </TouchableOpacity>
-            <Text style={styles.title}>Bem Vindo.</Text>
-            <Text style={styles.description}>Encontre no mapa um ponto de coleta</Text>
+            <   View style={styles.container}>
+                <TouchableOpacity onPress={handleNavigateBack}>
+                    <Icon name="arrow-left" size={20} color="#34cb79"/>
+                </TouchableOpacity>
+                <Text style={styles.title}>Bem Vindo.</Text>
+                <Text style={styles.description}>Encontre no mapa um ponto de coleta</Text>
 
-            <View style={styles.mapContainer}>
-                { initialPosition[0] !== 0 && (
-                    <MapView
-                        style={styles.map}
-                        loadingEnabled={initialPosition[0] === 0}
-                        initialRegion={{
-                            latitude: initialPosition[0],
-                            longitude: initialPosition[1],
-                            latitudeDelta: 0.014,
-                            longitudeDelta: 0.014 ,
-                        }} >
-                        {points.map(point => (
-                            <Marker
-                                key={String(point.id)}
-                                style={styles.mapMarker}
-                                onPress={() => handleNavigateToDetail(point.id)}
-                                coordinate={{
-                                    latitude: point.latitude,
-                                    longitude: point.longitude,
-                                }}>
-                                <View style={styles.mapMarkerContainer}>
-                                    <Image style={styles.mapMarkerImage} source={{uri: point.image_url}}/>
-                                    <Text style={styles.mapMarkerTitle}>{point.name}</Text>
-                                </View>
-                            </Marker>
-                        ))}
-                    </MapView>
-                ) }
+                <View style={styles.mapContainer}>
+                    { initialPosition[0] !== 0 && (
+                        <MapView
+                            style={styles.map}
+                            loadingEnabled={initialPosition[0] === 0}
+                            initialRegion={{
+                                latitude: initialPosition[0],
+                                longitude: initialPosition[1],
+                                latitudeDelta: 0.014,
+                                longitudeDelta: 0.014 ,
+                            }} >
+                            {points.map(point => (
+                                <Marker
+                                    key={String(point.id)}
+                                    style={styles.mapMarker}
+                                    onPress={() => handleNavigateToDetail(point.id)}
+                                    coordinate={{
+                                        latitude: point.latitude,
+                                        longitude: point.longitude,
+                                    }}>
+                                    <View style={styles.mapMarkerContainer}>
+                                        <Image style={styles.mapMarkerImage} source={{uri: point.image}}/>
+                                        <Text style={styles.mapMarkerTitle}>{point.name}</Text>
+                                    </View>
+                                </Marker>
+                            ))}
+                        </MapView>
+                    ) }
+                </View>
             </View>
-        </View>
-          <View style={styles.itemsContainer}>
-              <ScrollView
-                  horizontal
-                  showsHorizontalScrollIndicator={false}
-                  contentContainerStyle={{paddingHorizontal: 20}}
-              >
-                  {items.map(item => (
-                      <TouchableOpacity
-                          key={String(item.id)}
-                          style={[
-                              styles.item,
-                              selectedItems.includes(item.id) ? styles.selectedItem : {}
-                          ]}
-                          onPress={() => handleSelectItem(item.id)}
-                          activeOpacity={0.6}
+            <View style={styles.itemsContainer}>
+                <ScrollView
+                    horizontal
+                    showsHorizontalScrollIndicator={false}
+                    contentContainerStyle={{paddingHorizontal: 20}}
+                >
+                    {items.map(item => (
+                        <TouchableOpacity
+                            key={String(item.id)}
+                            style={[
+                                styles.item,
+                                selectedItems.includes(item.id) ? styles.selectedItem : {}
+                            ]}
+                            onPress={() => handleSelectItem(item.id)}
+                            activeOpacity={0.6}
                         >
-                          <SvgUri width={42} height={42} uri="http://192.168.100.86:3333/uploads/baterias.svg"/>
-                          <Text style={styles.itemTitle}>{item.name}</Text>
-                      </TouchableOpacity>
-                  ))}
-              </ScrollView>
-          </View>
+                            <SvgUri width={42} height={42} uri="http://192.168.100.86:3333/uploads/baterias.svg"/>
+                            <Text style={styles.itemTitle}>{item.name}</Text>
+                        </TouchableOpacity>
+                    ))}
+                </ScrollView>
+            </View>
         </>
     )
 };

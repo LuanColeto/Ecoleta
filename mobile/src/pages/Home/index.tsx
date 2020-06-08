@@ -1,13 +1,27 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Feather as Icon } from '@expo/vector-icons';
-import {View, ImageBackground, Image, Text, StyleSheet, TextInput, KeyboardAvoidingView, Platform} from "react-native";
+import {
+    View,
+    ImageBackground,
+    Image,
+    Text,
+    StyleSheet,
+    TextInput,
+    KeyboardAvoidingView,
+    Platform,
+    Picker, PickerItem
+} from "react-native";
 import { RectButton } from 'react-native-gesture-handler';
-import { useNavigation } from '@react-navigation/native'
-
+import { useNavigation } from '@react-navigation/native';
+ 
 const Home = () => {
     const navigation = useNavigation();
     const [uf, setUf] = useState('');
     const [city, setCity] = useState('');
+
+    const [selectedUf, setSelectedUf] = useState('0');
+
+
 
     function handleNavigateToPoints() {
         navigation.navigate('Points', {
@@ -15,6 +29,7 @@ const Home = () => {
             city
         });
     }
+
 
     return (
         <KeyboardAvoidingView style={{flex: 1}} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
@@ -31,6 +46,7 @@ const Home = () => {
                     </View>
                 </View>
                 <View style={styles.footer}>
+
                     <TextInput
                         style={styles.input}
                         placeholder="digite a UF"
