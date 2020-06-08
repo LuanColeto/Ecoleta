@@ -5,7 +5,7 @@
 
 # Índice
 
-- [Sobre](#sobre)
+- [Sobre o Projeto](#sobre)
 - [Documentação](#documentacao)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Como Usar](#como-usar)
@@ -13,17 +13,14 @@
 
 <a id="sobre"></a>
 
-## :bookmark: Sobre
+## :bookmark: Sobre o Projeto
 
-O <strong>Ecoleta</strong> é uma aplicação Web e Mobile para ajudar pessoas a encontrarem pontos de coleta para reciclagem.
+<strong>Ecoleta</strong> é uma aplicação desenvolvida com o objetivo de ajudar pessoas a encontrarem pontos de coleta para reciclagem.
 
 Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>Next Level Week</strong> distribuída pela [Rocketseat](https://rocketseat.com.br/). A ideia de criar uma aplicação voltada ao meio ambiente surgiu da coincidência da data do curso e a data da <strong>semana do meio ambiente</strong>
 
 <a id="documentacao"></a>
 
-## :books: Documentação
-
-Para reforçar alguns conceitos e registrar comandos que são dificeis de se lembrar eu fiz uma pequena **[DOCUMENTAÇÃO](DOCUMENTATION.md)** para ajudar quem esta iniciando com **TypeScript**, **Node**, **ReactJS** e **React Native**. 
 
 <a id="tecnologias-utilizadas"></a>
 
@@ -38,7 +35,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 <a id="como-usar"></a>
 
-## :fire: Como usar
+## :fire: Como utilizar a aplicação
 
 - ### **Pré-requisitos**
 
@@ -46,7 +43,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
   - Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
   - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
 
-1. Faça um clone :
+1. clone o projeto :
 
 ```sh
   $ git clone https://github.com/LuanColeto/Ecoleta.git
@@ -75,14 +72,10 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 ## :recycle: Como contribuir
 
-- Faça um Fork desse repositório,
+- Faça um Fork do repositório,
 - Crie uma branch com a sua feature: `git checkout -b my-feature`
 - Commit suas mudanças: `git commit -m 'feat: My new feature'`
 - Push a sua branch: `git push origin my-feature`
-
-## :mortar_board: Quem ministrou?
-
-As aulas foram ministradas pelo mestre **[Diego Fernandes](https://github.com/diego3g)** nas aulas da **Next Level Week**.
 
 ## :memo: License
 
