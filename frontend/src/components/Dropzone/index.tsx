@@ -8,7 +8,7 @@ interface Props {
     onFileUploaded: (File: File) => void;
 }
 
-const Dropone: React.FC<Props> = ({onFileUploaded}) => {
+const Dropzone: React.FC<Props> = ({onFileUploaded}) => {
     const [selectedFileUrl, setSelectedFileUrl] = useState('');
 
     const onDrop = useCallback(acceptedFiles => {
@@ -41,4 +41,4 @@ const Dropone: React.FC<Props> = ({onFileUploaded}) => {
     )
 };
 
-export default Dropone;
+export default Dropzone;
