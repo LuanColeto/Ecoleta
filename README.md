@@ -1,6 +1,6 @@
 <h3 align="center">
     <br><br>
-    <b>Recicle! ajude o meio ambiente!</b> 
+    <b>Recicle! ajude o meio ambiente!</b>  
 </h3>
 
 # Índice
