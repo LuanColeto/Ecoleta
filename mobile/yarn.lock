@@ -2383,6 +2383,21 @@
   resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.3.tgz#b755a0934564a200d3efdf88546ec93c369abd03"
   integrity sha512-7s9EQWupR1fTc2pSMtXRQ9w9gLOcrJn+h7HOXw4evxyvVqMi4f+q7d2tnFe3ng3SNHjtK+0EzGMGFUQX4/AQRA==
 
+"@types/react-native-svg-uri@^1.2.3":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@types/react-native-svg-uri/-/react-native-svg-uri-1.2.4.tgz#6c82028a5e77f6d587ae5babcb3ffca5c4963597"
+  integrity sha512-zl0S6qPa8ylj7yJ8jhWDs43KslXhpShSEXJJLmefir5cE1IVD1hUVAkeP3mUN60xs7Ftmc7b1U7lJ1Jk3UwdpQ==
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
+"@types/react-native@*":
+  version "0.67.1"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.67.1.tgz#b11dad862c850e2556caaf252ad87cff12502f0b"
+  integrity sha512-uUlyohC91eQN0FWYq1pyYFSbwbnIDFjYSoc3ILieRfnH1epvSDXcSklfCVYjDizoD3ByWu2h5Yk6HbcbRJ4oGw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-native@^0.60.22":
   version "0.60.31"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.31.tgz#a7af12197f884ad8dd22cda2df9862ed72973ded"
@@ -3356,10 +3371,10 @@ base32.js@0.1.0:
   resolved "https://registry.yarnpkg.com/base32.js/-/base32.js-0.1.0.tgz#b582dec693c2f11e893cf064ee6ac5b6131a2202"
   integrity sha1-tYLexpPC8R6JPPBk7mrFthMaIgI=
 
-base64-js@^1.0.2, base64-js@^1.1.2, base64-js@^1.2.3:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.1.tgz#58ece8cb75dd07e71ed08c736abc5fac4dbf8df1"
-  integrity sha512-mLQ4i2QO1ytvGWFWmcngKO//JXAQueZvwEKtjgQFM4jIK0kU+ytMfplL8j+n5mspOfjHwoAg+9yhb7BwAHm36g==
+base64-js@^1.0.2, base64-js@^1.1.2, base64-js@^1.2.3, base64-js@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
 base64url@3.0.1:
   version "3.0.1"
@@ -8160,6 +8175,11 @@ lodash.assign@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
   integrity sha1-DZnzzNem0mHRm9rrkkUAXShYCOc=
 
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
+
 lodash.isobject@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/lodash.isobject/-/lodash.isobject-3.0.2.tgz#3c8fb8d5b5bf4bf90ae06e14f2a530a4ed935e1d"
@@ -10093,13 +10113,12 @@ pkg-up@2.0.0, pkg-up@^2.0.0:
     find-up "^2.1.0"
 
 plist@^3.0.0, plist@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.1.tgz#a9b931d17c304e8912ef0ba3bdd6182baf2e1f8c"
-  integrity sha512-GpgvHHocGRyQm74b6FWEZZVRroHKE1I0/BTjAmySaohK+cUn+hZpbqXkc3KWgW3gQYkqcQej35FohcT0FRlkRQ==
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/plist/-/plist-3.0.4.tgz#a62df837e3aed2bb3b735899d510c4f186019cbe"
+  integrity sha512-ksrr8y9+nXOxQB2osVNqrgvX/XQPOXaU4BQMKjYq8PvaY1U18mo+fKgBSwzK+luSyinOuPae956lSVcBwxlAMg==
   dependencies:
-    base64-js "^1.2.3"
+    base64-js "^1.5.1"
     xmlbuilder "^9.0.7"
-    xmldom "0.1.x"
 
 plugin-error@^0.1.2:
   version "0.1.2"
@@ -10899,6 +10918,18 @@ react-native-maps@0.26.1:
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.26.1.tgz#6ec316259b38d259c8974448d894bd7a23101da4"
   integrity sha512-p4VTB8YB5ZmOmDRCUpoHZkm05amZwhIo04AJMBbB9+JAR2PNNfpo0vceoWX0Mag4wnePkdzPomeWMplr/wimTg==
 
+react-native-option-select@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-native-option-select/-/react-native-option-select-1.0.4.tgz#cb6b8e14271747e256cc000eab873ab8c7d3d03f"
+  integrity sha1-y2uOFCcXR+JWzAAOq4c6uMfT0D8=
+
+react-native-picker-select@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-picker-select/-/react-native-picker-select-7.0.0.tgz#4808a1177f997e234bb8505849dfffe1a01fedac"
+  integrity sha512-SO7b7wHfeM07oVTsLhBlT/VDvMXg2aP0Xy5CA+kL7+oV2Bq6nfKTVjpB2+HLVhFik9i/tlq5ROuGdUrfPhl3rg==
+  dependencies:
+    lodash.isequal "^4.5.0"
+
 react-native-safe-area-context@0.7.3:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-0.7.3.tgz#ad6bd4abbabe195332c53810e4ce5851eb21aa2a"
@@ -10917,6 +10948,18 @@ react-native-screens@~2.2.0:
   integrity sha512-a0VzxOWot7F9B/GQyDSssBRd3jUJazFnTQS61IiyReWB6aHlFhf3Xz10jBRoURXy1EMCDCHgenmTVTkKHpKyqQ==
   dependencies:
     debounce "^1.2.0"
+
+react-native-select-input-ios@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-select-input-ios/-/react-native-select-input-ios-2.0.5.tgz#95a6b65569513cd5ad6f7b94016b6bd2477c6d18"
+  integrity sha512-3667Zvgjt5tDFu5PvbdnHs6m72k9WTN2PM2nj91xsMGzMCi7Bz2FYU6WjK3JNRT358fFhblKICxBLVJE/1h7yA==
+
+react-native-svg-uri@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/react-native-svg-uri/-/react-native-svg-uri-1.2.3.tgz#2f67f30564068a0fee68a751845332a5185a1aab"
+  integrity sha1-L2fzBWQGig/uaKdRhFMypRhaGqs=
+  dependencies:
+    xmldom "^0.1.22"
 
 react-native-svg@^11.0.1:
   version "11.0.1"
@@ -13761,7 +13804,7 @@ xmldom@0.1.27:
   resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.27.tgz#d501f97b3bdb403af8ef9ecc20573187aadac0e9"
   integrity sha1-1QH5ezvbQDr4757MIFcxh6rawOk=
 
-xmldom@0.1.x, xmldom@~0.1.31:
+xmldom@^0.1.22, xmldom@~0.1.31:
   version "0.1.31"
   resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.31.tgz#b76c9a1bd9f0a9737e5a72dc37231cf38375e2ff"
   integrity sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
